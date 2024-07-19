@@ -20,12 +20,13 @@ final class SettingViewController: UIViewController {
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout())
     
     private func layout() -> UICollectionViewLayout{
-        let configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        let configuration = UICollectionLayoutListConfiguration(appearance: .plain)
         let layout = UICollectionViewCompositionalLayout.list(using: configuration)
-
         return layout
     }
     
+
+
     var dataSource:UICollectionViewDiffableDataSource<Section, Setting>!
     let list = SettingDataManager.shared.fetchList()
     
@@ -50,6 +51,7 @@ final class SettingViewController: UIViewController {
     }
     
     private func configureUI(){
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
         view.backgroundColor = .white
         title = "설정"
     }
@@ -60,15 +62,11 @@ final class SettingViewController: UIViewController {
         //CellRegistration<Cell, item>
         var registeration:UICollectionView.CellRegistration<UICollectionViewListCell, Setting>!
         registeration = UICollectionView.CellRegistration{ cell, indexPath, itemIdentifier in
-            var backgroundConfig = UIBackgroundConfiguration.listGroupedCell()
-            backgroundConfig.backgroundColor = .yellow
-            backgroundConfig.cornerRadius = 10
-            backgroundConfig.strokeColor = .systemRed
-            backgroundConfig.strokeWidth = 1
-            cell.backgroundConfiguration = backgroundConfig
-            
             var content = UIListContentConfiguration.valueCell()
             content.text = itemIdentifier.title
+            if indexPath.item == 0{
+                content.textProperties.font = .boldSystemFont(ofSize: 17)
+            }
             cell.contentConfiguration = content
         }
         
@@ -76,6 +74,7 @@ final class SettingViewController: UIViewController {
             let cell = collectionView.dequeueConfiguredReusableCell(using: registeration, for: indexPath, item: itemIdentifier)
             return cell
         })
+
     }
     
     private func updateSnapShot(){
