@@ -15,6 +15,8 @@
 		48F89C462C491E5200F226BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48F89C452C491E5200F226BE /* SnapKit */; };
 		48F89C482C49225500F226BE /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C472C49225500F226BE /* Setting.swift */; };
 		48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C492C49521700F226BE /* SettingHeader.swift */; };
+		48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */; };
+		48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4D2C4A01FA00F226BE /* ChattingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		48F89C3C2C491DB600F226BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F89C472C49225500F226BE /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		48F89C492C49521700F226BE /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
+		48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
+		48F89C4D2C4A01FA00F226BE /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		48F89C432C491E2300F226BE /* TravelTalk */ = {
 			isa = PBXGroup;
 			children = (
+				48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */,
+				48F89C4D2C4A01FA00F226BE /* ChattingData.swift */,
 			);
 			path = TravelTalk;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			files = (
 				48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */,
 				48F89C332C491DB400F226BE /* SettingViewController.swift in Sources */,
+				48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */,
+				48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */,
 				48F89C2F2C491DB400F226BE /* AppDelegate.swift in Sources */,
 				48F89C482C49225500F226BE /* Setting.swift in Sources */,
 				48F89C312C491DB400F226BE /* SceneDelegate.swift in Sources */,
