@@ -17,6 +17,7 @@
 		48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C492C49521700F226BE /* SettingHeader.swift */; };
 		48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */; };
 		48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4D2C4A01FA00F226BE /* ChattingData.swift */; };
+		48F89C502C4AA63F00F226BE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4F2C4AA63F00F226BE /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		48F89C492C49521700F226BE /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
 		48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
 		48F89C4D2C4A01FA00F226BE /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		48F89C4F2C4AA63F00F226BE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				48F89C322C491DB400F226BE /* SettingViewController.swift */,
 				48F89C472C49225500F226BE /* Setting.swift */,
 				48F89C492C49521700F226BE /* SettingHeader.swift */,
+				48F89C4F2C4AA63F00F226BE /* TestViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */,
 				48F89C332C491DB400F226BE /* SettingViewController.swift in Sources */,
+				48F89C502C4AA63F00F226BE /* TestViewController.swift in Sources */,
 				48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */,
 				48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */,
 				48F89C2F2C491DB400F226BE /* AppDelegate.swift in Sources */,
