@@ -20,20 +20,17 @@ class SettingDataManager{
     
     private var list:[[Setting]] = [
         [
-            Setting(title: "전체"),
             Setting(title: "공지사항"),
             Setting(title: "실험실"),
             Setting(title: "버전 정보"),
         ],
         [
-            Setting(title: "개인"),
             Setting(title: "개인/보안"),
             Setting(title: "알림"),
             Setting(title: "채팅"),
             Setting(title: "멀티프로필"),
         ],
         [
-            Setting(title: "기타"),
             Setting(title: "고객센터/도움말"),
         ],
     ]

@@ -9,30 +9,28 @@
 /* Begin PBXBuildFile section */
 		48F89C2F2C491DB400F226BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C2E2C491DB400F226BE /* AppDelegate.swift */; };
 		48F89C312C491DB400F226BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C302C491DB400F226BE /* SceneDelegate.swift */; };
-		48F89C332C491DB400F226BE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C322C491DB400F226BE /* SettingViewController.swift */; };
 		48F89C382C491DB600F226BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F89C372C491DB600F226BE /* Assets.xcassets */; };
 		48F89C3B2C491DB600F226BE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 48F89C3A2C491DB600F226BE /* Base */; };
 		48F89C462C491E5200F226BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48F89C452C491E5200F226BE /* SnapKit */; };
-		48F89C482C49225500F226BE /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C472C49225500F226BE /* Setting.swift */; };
 		48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C492C49521700F226BE /* SettingHeader.swift */; };
 		48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */; };
 		48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4D2C4A01FA00F226BE /* ChattingData.swift */; };
 		48F89C502C4AA63F00F226BE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C4F2C4AA63F00F226BE /* TestViewController.swift */; };
+		48F89C522C4B62AE00F226BE /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F89C512C4B62AE00F226BE /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48F89C2B2C491DB400F226BE /* DiffablePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffablePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F89C2E2C491DB400F226BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F89C302C491DB400F226BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48F89C322C491DB400F226BE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		48F89C372C491DB600F226BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F89C3A2C491DB600F226BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F89C3C2C491DB600F226BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48F89C472C49225500F226BE /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		48F89C492C49521700F226BE /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
 		48F89C4B2C49FDB700F226BE /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
 		48F89C4D2C4A01FA00F226BE /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 		48F89C4F2C4AA63F00F226BE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		48F89C512C4B62AE00F226BE /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +78,7 @@
 		48F89C422C491E1500F226BE /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				48F89C322C491DB400F226BE /* SettingViewController.swift */,
-				48F89C472C49225500F226BE /* Setting.swift */,
+				48F89C512C4B62AE00F226BE /* Setting.swift */,
 				48F89C492C49521700F226BE /* SettingHeader.swift */,
 				48F89C4F2C4AA63F00F226BE /* TestViewController.swift */,
 			);
@@ -174,12 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F89C4A2C49521700F226BE /* SettingHeader.swift in Sources */,
-				48F89C332C491DB400F226BE /* SettingViewController.swift in Sources */,
 				48F89C502C4AA63F00F226BE /* TestViewController.swift in Sources */,
 				48F89C4C2C49FDB700F226BE /* TravelTalkViewController.swift in Sources */,
 				48F89C4E2C4A01FA00F226BE /* ChattingData.swift in Sources */,
 				48F89C2F2C491DB400F226BE /* AppDelegate.swift in Sources */,
-				48F89C482C49225500F226BE /* Setting.swift in Sources */,
+				48F89C522C4B62AE00F226BE /* Setting.swift in Sources */,
 				48F89C312C491DB400F226BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

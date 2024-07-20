@@ -7,12 +7,12 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class SettingViewController: UIViewController {
 
-    enum Section:Int, CaseIterable{
-        case all
-        case personal
-        case etCetra
+    enum Section:String,CaseIterable{
+        case all = "전체 설정"
+        case personal = "개인 설정"
+        case etCetra = "기타"
     }
     
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
@@ -21,9 +21,7 @@ class TestViewController: UIViewController {
         let sectionProvider = { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
 
             var configuration = UICollectionLayoutListConfiguration(appearance: .plain)
-            configuration.showsSeparators = false
             configuration.headerMode = .supplementary
-
             return NSCollectionLayoutSection.list(using: configuration, layoutEnvironment: layoutEnvironment)
         }
 
@@ -63,14 +61,10 @@ class TestViewController: UIViewController {
     }
     
     private func configureDataSource(){
-        //CellRegistration<Cell, item>
         var registeration:UICollectionView.CellRegistration<UICollectionViewListCell, Setting>!
         registeration = UICollectionView.CellRegistration{ cell, indexPath, itemIdentifier in
             var content = UIListContentConfiguration.valueCell()
             content.text = itemIdentifier.title
-            if indexPath.item == 0{
-                content.textProperties.font = .boldSystemFont(ofSize: 17)
-            }
             cell.contentConfiguration = content
         }
         
@@ -106,11 +100,10 @@ class TestViewController: UIViewController {
 
     private func makeSectionHeaderRegistration() -> UICollectionView.SupplementaryRegistration<UICollectionViewListCell> {
         return UICollectionView.SupplementaryRegistration<UICollectionViewListCell>(elementKind: UICollectionView.elementKindSectionHeader) { (headerView, _, indexPath) in
-            guard let sectionKind = Section(rawValue: indexPath.section) else { return }
-                        
+            let sectionKind = Section.allCases[indexPath.section]
             var content = UIListContentConfiguration.sidebarHeader()
-            content.text = "\(sectionKind)"
-            content.textProperties.color = .systemBlue
+            content.text = sectionKind.rawValue
+            content.textProperties.color = .black
             headerView.contentConfiguration = content
         }
     }
